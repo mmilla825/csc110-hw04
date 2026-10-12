@@ -96,7 +96,7 @@ Also, you do not need to do input checking. If the user inputs a bad input (like
 
 ### define the function
 
-The purpose of check_greater function is to get two integers from te user (you decide what prompts to use), and compare them. There are three cases of what can happen:
+The purpose of check_greater function is to get two integers from the user (you decide what prompts to use), and compare them. There are three cases of what can happen:
 
   * If the first integer is greater than the second, your function should print `First is Greater`.
   * If the second integer is greater than the first, your function should print `Second is Greater`.
@@ -126,7 +126,7 @@ Also, you do not need to do input checking. If the user inputs a bad input (like
 
 ## Task 4: my_for_loop and my_while_loop functions
 
-These are self-desig functions that take no inputs.
+These are self-design functions that take no inputs.
 
 ### my_for_loop
 

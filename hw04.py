@@ -21,7 +21,7 @@ def check_text():
             print("You used the secret word!")
             break
         elif "dog" in result or "Dog" in result:
-            print("You used the word \"dog\" or \"Dog\"!")
+            print("You used the word \"dog\" or the word \"Dog\"!")
             break
         else:
             print("Try again")
@@ -74,9 +74,11 @@ def my_for_loop():
     text = input("Give me a string: ")
     
     if not (2 <= len(text) <=5) or " " in text: # check length and spaces
+        print("bad word")
         return
     
     vowels = "a,e,i,o,u,A,E,I,O,U"
+    
     for letter in text:
         if letter in vowels:
             print(f"{letter} is a vowel")
@@ -91,16 +93,17 @@ def my_while_loop():
         if user selects c, exit
         """
     while True:
-        choice = input("Choose one option: a, b, or c: ")
+        choice = input("Choose an option: a, b, or c: ")
         
         if choice == "a":
             continue
         elif choice == "b":
             print("Goodbye")
+            break
         elif choice == "c":
             sys.exit()
         else:
-            print("Try again")
+            print("try again")
 
 # ---------------------------------------
 # Do not modify anything below this line
