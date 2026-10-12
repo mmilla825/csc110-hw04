@@ -19,7 +19,7 @@ def check_text():
         
         if secret_word in result:
             print("You used the secret word!")
-            break
+            break #interrupt after secret word is used
         elif "dog" in result or "Dog" in result:
             print("You used the word \"dog\" or the word \"Dog\"!")
             break
@@ -41,7 +41,7 @@ def check_greater():
             print("First is Greater")
             print("Done")
             break
-        elif result1 < result2:
+        elif result1 < result2: #elif is used for more than one condition
             print("Second is Greater")
             print("Done")
             break
@@ -56,7 +56,7 @@ def get_special_numbers():
         If multiple of 5, skip and continue
         """
     for i in range (1,41):
-        if i % 2 == 0:
+        if i % 2 == 0: # % is used to find remainder, set remainder equal to 0
             continue
         if i % 3 != 0:
             continue
@@ -74,14 +74,14 @@ def my_for_loop():
     text = input("Give me a string: ")
     
     if not (2 <= len(text) <=5) or " " in text: # check length and spaces
-        print("bad word")
+        print("bad word") # must confirm bad word if it doesn't fall within the limit
         return
     
     vowels = "a,e,i,o,u,A,E,I,O,U"
     
     for letter in text:
         if letter in vowels:
-            print(f"{letter} is a vowel")
+            print(f"{letter} is a vowel") # f"{} used to print the letter used
         else:
             print(f"{letter} is a consonant")
     
@@ -99,7 +99,7 @@ def my_while_loop():
             continue
         elif choice == "b":
             print("Goodbye")
-            break
+            break # must interrupt and end after goodbye
         elif choice == "c":
             sys.exit()
         else:
